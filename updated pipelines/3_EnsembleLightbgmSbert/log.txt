@@ -1,0 +1,95 @@
+Validation Metrics:
+Accuracy: 0.8369
+Precision: 0.9796
+Recall: 0.8478
+Recall: 0.8478
+F1 Score: 0.9089
+F1 Score: 0.9089
+Macro F1: 0.5629
+Macro F1: 0.5629
+
+
+Test Metrics:
+Test Metrics:
+Accuracy: 0.6209
+Precision: 0.9662
+Precision: 0.9662
+Recall: 0.6058
+F1 Score: 0.7447
+F1 Score: 0.7447
+Macro F1: 0.5047
+
+
+----- Validation Set Evaluation -----
+Accuracy: 0.8369
+Precision: 0.9796
+Recall: 0.8478
+F1 Score: 0.9089
+Macro F1: 0.5629
+
+Classification Report:
+              precision    recall  f1-score   support
+
+       False       0.13      0.57      0.22        56
+        True       0.98      0.85      0.91      1360
+
+    accuracy                           0.84      1416
+   macro avg       0.56      0.71      0.56      1416
+weighted avg       0.95      0.84      0.88      1416
+
+
+----- Test Set Evaluation -----
+Accuracy: 0.6209
+Precision: 0.9662
+Recall: 0.6058
+F1 Score: 0.7447
+Macro F1: 0.5047
+
+Classification Report:
+              precision    recall  f1-score   support
+
+       False       0.16      0.78      0.26       240
+        True       0.97      0.61      0.74      2501
+
+    accuracy                           0.62      2741
+   macro avg       0.56      0.69      0.50      2741
+weighted avg       0.90      0.62      0.70      2741
+
+
+Plotting feature importance...
+
+Top Metadata Features (by importance):
+lie_ratio_in_dialogue          → 7.00
+relative_index                 → 2.00
+char_count                     → 1.00
+sender_score                   → 1.00
+num_messages_in_dialogue       → 1.00
+pair_deception_rate            → 1.00
+season_Spring                  → 1.00
+word_count                     → 0.00
+is_empty                       → 0.00
+is_very_long                   → 0.00
+question_count                 → 0.00
+exclamation_count              → 0.00
+ellipsis_count                 → 0.00
+absolute_index                 → 0.00
+relative_position              → 0.00
+is_fall                        → 0.00
+is_mid_game                    → 0.00
+score_delta                    → 0.00
+avg_words_in_dialogue          → 0.00
+country_deception_rate         → 0.00
+
+
+----- Test Set Evaluation -----
+Accuracy: 0.900481313389274
+
+Classification Report:
+              precision    recall  f1-score   support
+
+       False       0.15      0.03      0.05       240
+        True       0.91      0.98      0.95      2501
+
+    accuracy                           0.98      2741
+   macro avg       0.53      0.51      0.50      2741
+weighted avg       0.85      0.98      0.87      2741

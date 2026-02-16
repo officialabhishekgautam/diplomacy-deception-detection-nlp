@@ -1,0 +1,129 @@
+PS C:\Users\Douglas\OneDrive\Desktop\NLP_Project\2_HierarBiLSTM_richmetadata> python .\new.py
+Using device: cuda
+Loading data...
+Augmented 591 0 samples by factor of 3
+Original distribution: 591 truthful, 12541 deceptive
+Augmented distribution: 2364 truthful, 12541 deceptive
+Train data: 14905 messages
+Validation data: 1416 messages
+Test data: 2741 messages
+
+Class distribution:
+Train: 2364 deceptive, 12541 truthful
+Validation: 56 deceptive, 1360 truthful
+Test: 240 deceptive, 2501 truthful
+
+Class weights: {0: 3.333164124300846, 1: 0.7235763361920465}
+
+Initializing BERT tokenizer...
+
+Initializing model...
+C:\Python311\Lib\site-packages\torch\nn\modules\rnn.py:123: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.3 and num_layers=1
+  warnings.warn(
+Model initialized with metadata dimension: 26
+
+Starting training...
+
+Epoch 1/8
+Training: 100%|████████████████████████████████████████████████████████████████████████████████████| 3727/3727 [02:30<00:00, 24.73it/s] 
+Validation: 100%|████████████████████████████████████████████████████████████████████████████████████| 354/354 [00:07<00:00, 46.11it/s]
+Train Loss: 0.5725, F1: 0.6318
+Val Loss: 0.1625, F1: 0.5679
+Truthful - Precision: 0.1361, Recall: 0.4107, F1: 0.2044
+Deceptive - Precision: 0.9735, Recall: 0.8926, F1: 0.9313
+Saved best model!
+
+Epoch 2/8
+Training: 100%|████████████████████████████████████████████████████████████████████████████████████| 3727/3727 [02:29<00:00, 24.98it/s] 
+Validation: 100%|████████████████████████████████████████████████████████████████████████████████████| 354/354 [00:07<00:00, 46.21it/s]
+Train Loss: 0.5143, F1: 0.6212
+Val Loss: 0.1596, F1: 0.5755
+Truthful - Precision: 0.1455, Recall: 0.4286, F1: 0.2172
+Deceptive - Precision: 0.9744, Recall: 0.8963, F1: 0.9337
+Saved best model!
+
+Epoch 3/8
+Training: 100%|████████████████████████████████████████████████████████████████████████████████████| 3727/3727 [02:29<00:00, 24.98it/s] 
+Validation: 100%|████████████████████████████████████████████████████████████████████████████████████| 354/354 [00:07<00:00, 46.05it/s]
+Train Loss: 0.4040, F1: 0.6322
+Val Loss: 0.1342, F1: 0.5426
+Truthful - Precision: 0.1166, Recall: 0.5893, F1: 0.1947
+Deceptive - Precision: 0.9797, Recall: 0.8162, F1: 0.8905
+
+Epoch 4/8
+Training: 100%|████████████████████████████████████████████████████████████████████████████████████| 3727/3727 [02:28<00:00, 25.02it/s] 
+Validation: 100%|████████████████████████████████████████████████████████████████████████████████████| 354/354 [00:07<00:00, 46.22it/s]
+Train Loss: 0.3730, F1: 0.6432
+Val Loss: 0.1329, F1: 0.4816
+Truthful - Precision: 0.0882, Recall: 0.7500, F1: 0.1579
+Deceptive - Precision: 0.9851, Recall: 0.6809, F1: 0.8052
+
+Epoch 5/8
+Training: 100%|████████████████████████████████████████████████████████████████████████████████████| 3727/3727 [02:36<00:00, 23.80it/s] 
+Validation: 100%|████████████████████████████████████████████████████████████████████████████████████| 354/354 [00:09<00:00, 38.12it/s] 
+Train Loss: 0.3493, F1: 0.6570
+Val Loss: 0.1415, F1: 0.4445
+Truthful - Precision: 0.0780, Recall: 0.8214, F1: 0.1424
+Deceptive - Precision: 0.9879, Recall: 0.6000, F1: 0.7466
+
+Epoch 6/8
+Training: 100%|████████████████████████████████████████████████████████████████████████████████████| 3727/3727 [02:45<00:00, 22.46it/s] 
+Validation: 100%|████████████████████████████████████████████████████████████████████████████████████| 354/354 [00:09<00:00, 38.03it/s]
+Train Loss: 0.3213, F1: 0.6659
+Val Loss: 0.1334, F1: 0.4818
+Truthful - Precision: 0.0862, Recall: 0.7143, F1: 0.1538
+Deceptive - Precision: 0.9832, Recall: 0.6882, F1: 0.8097
+
+Epoch 7/8
+Training: 100%|████████████████████████████████████████████████████████████████████████████████████| 3727/3727 [02:46<00:00, 22.35it/s] 
+Validation: 100%|████████████████████████████████████████████████████████████████████████████████████| 354/354 [00:09<00:00, 36.65it/s]
+Train Loss: 0.3041, F1: 0.6769
+Val Loss: 0.1351, F1: 0.4655
+Truthful - Precision: 0.0814, Recall: 0.7500, F1: 0.1469
+Deceptive - Precision: 0.9844, Recall: 0.6515, F1: 0.7841
+
+Epoch 8/8
+Training: 100%|████████████████████████████████████████████████████████████████████████████████████| 3727/3727 [02:48<00:00, 22.18it/s] 
+Validation: 100%|████████████████████████████████████████████████████████████████████████████████████| 354/354 [00:10<00:00, 35.34it/s] 
+Train Loss: 0.3103, F1: 0.6843
+Val Loss: 0.1310, F1: 0.4855
+Truthful - Precision: 0.0869, Recall: 0.6964, F1: 0.1545
+Deceptive - Precision: 0.9824, Recall: 0.6985, F1: 0.8165
+
+Final evaluation on validation set:
+Validation: 100%|████████████████████████████████████████████████████████████████████████████████████| 354/354 [00:09<00:00, 36.00it/s] 
+
+Error Analysis:
+Total errors: 173 (12.22%)
+False positives: 32
+False negatives: 141
+
+Evaluating on test set:
+Validation: 100%|████████████████████████████████████████████████████████████████████████████████████| 686/686 [00:19<00:00, 35.14it/s]
+Test Loss: 0.2831
+Test Accuracy: 0.7614
+Test Macro Precision: 0.5921
+Test Macro Recall: 0.7280
+Test Macro F1: 0.5950
+Test Deceptive - F1: 0.3354
+Test Truthful - F1: 0.8546
+
+Error Analysis:
+Total errors: 654 (23.86%)
+False positives: 75
+False negatives: 579
+
+Most important features for classifying deceptive messages:
+
+Feature analysis (mean values):
+word_count: Deceptive=-0.0653, Truthful=0.3463, Diff=-0.4116
+char_count: Deceptive=-0.0618, Truthful=0.3277, Diff=-0.3895
+question_count: Deceptive=0.0147, Truthful=-0.0778, Diff=0.0925
+exclamation_count: Deceptive=-0.0009, Truthful=0.0050, Diff=-0.0059
+is_fall: Deceptive=0.4331, Truthful=0.3993, Diff=0.0338
+is_mid_game: Deceptive=0.3523, Truthful=0.3875, Diff=-0.0352
+sender_deception_rate: Deceptive=0.0822, Truthful=-0.4359, Diff=0.5181
+pair_deception_rate: Deceptive=0.1081, Truthful=-0.5732, Diff=0.6813
+dialogue_lie_ratio: Deceptive=0.1916, Truthful=-1.0165, Diff=1.2081
+game_lie_ratio: Deceptive=0.0950, Truthful=-0.5040, Diff=0.5990
+PS C:\Users\Douglas\OneDrive\Desktop\NLP_Project\2_HierarBiLSTM_richmetadata> 

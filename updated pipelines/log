@@ -1,0 +1,18 @@
+Final validation set evaluation:
+  accuracy: 0.9605
+  precision: 0.9605
+  f1: 0.9798
+  macro_f1: 0.4899
+  auc: 0.5696
+  
+
+Final test set evaluation:
+  accuracy: 0.9121
+  precision: 0.9124
+  recall: 0.9996
+  f1: 0.9540
+  macro_f1: 0.4770
+  auc: 0.5550
+
+
+
